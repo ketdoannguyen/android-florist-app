@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="listItemHome"
+            type="com.ntmk.myapp.model.Flower" />
+    </data>
+
+    <RelativeLayout
+        android:id="@+id/lyHomeViewList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingEnd="30dp"
+        android:background="@color/bgr_pager"
+        tools:context=".view.home.fragment.HomeFragment">
+
+        <RelativeLayout
+            android:id="@+id/lyViewListPink"
+            android:layout_width="160dp"
+            android:layout_height="230dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/shape_list"
+            android:padding="5dp">
+            <!--            android:onClick="@{()-> listItemHome.OnClick()}"-->
+
+            <TextView
+                android:id="@+id/txtView_list"
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/txtPrice_list"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:text="@={listItemHome.name}"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/txtPrice_list"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginBottom="10dp"
+                android:text="@={listItemHome.price}"
+                android:textColor="@color/cannon_pink"
+                android:textSize="14sp" />
+
+
+            <ImageView
+                android:id="@+id/btn_addProductToCart"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginEnd="2dp"
+                android:layout_marginBottom="4dp"
+                android:background="@drawable/shape_link"
+                android:contentDescription="@string/todo"
+                android:padding="10dp"
+                android:src="@drawable/cart" />
+
+
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/imgView_list"
+            android:layout_width="150dp"
+            android:layout_height="180dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginBottom="55dp"
+            android:imageUrl="@{listItemHome.img}"
+            android:src="@drawable/list_flower" />
+
+    </RelativeLayout>
+</layout>

@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <variable
+            name="FlowerCart"
+            type="com.ntmk.myapp.model.FlowerCart" />
+    </data>
+
+    <RelativeLayout
+        android:background="@color/bgr_pager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_marginTop="5dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="50dp"
+                android:layout_marginEnd="10dp">
+
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cartView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="10dp"
+                    app:cardUseCompatPadding="true">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="60dp"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tvCart_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="sans-serif-condensed-medium"
+                            android:paddingBottom="10dp"
+                            android:text="@={FlowerCart.name}"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/tvCart_price"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="sans-serif-condensed"
+                            android:text="@={FlowerCart.price}"
+                            android:textColor="@color/cannon_pink"
+                            android:textSize="14sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginStart="150dp"
+                        android:layout_marginTop="45dp"
+                        android:gravity="center">
+                        <ImageButton
+                            android:id="@+id/btn_decreaseqQuantity"
+                            android:layout_width="10dp"
+                            android:layout_height="10dp"
+                            android:background="@color/white"
+                            android:src="@drawable/ic_baseline_remove_24" />
+
+                        <EditText
+                            android:id="@+id/txt_quantity"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:background="@drawable/shape_arrow"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginEnd="5dp"
+                            android:enabled="false"
+                            android:gravity="center"
+                            android:text="@{Integer.toString(FlowerCart.quantity)}"
+                            android:textSize="14sp" />
+
+                        <ImageButton
+                            android:id="@+id/btn_increaseqQuantity"
+                            android:layout_width="10dp"
+                            android:layout_height="10dp"
+                            android:background="@color/white"
+                            android:src="@drawable/ic_baseline_add_24" />
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+            </RelativeLayout>
+
+
+            <ImageView
+                android:id="@+id/img_cart_list"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="10dp"
+                android:imageUrl="@{FlowerCart.img}"
+                android:src="@drawable/list_flower" />
+
+            <ImageView
+                android:id="@+id/btn_removeFlower"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:src="@drawable/delete"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="10dp"
+                android:padding="10dp"
+                android:background="@drawable/shape_delete" />
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+</layout>

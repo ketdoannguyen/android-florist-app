@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--<layout-->
+<!--    xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    xmlns:app="http://schemas.android.com/apk/res-auto">-->
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/img_slide"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="150dp"
+        android:src="@drawable/sl1"
+        android:contentDescription="@string/todo" />
+
+
+    <TextView
+        android:id="@+id/headingSlide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/img_slide"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="20dp"
+        android:text="@string/flower"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/title_slide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/headingSlide"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="40dp"
+        android:gravity="center"
+        android:letterSpacing="0.1"
+        android:lineSpacingExtra="1dp"
+        android:padding="30dp"
+        android:text="@string/Lorem"
+        android:textSize="14sp" />
+
+</RelativeLayout>
+<!--</layout>-->

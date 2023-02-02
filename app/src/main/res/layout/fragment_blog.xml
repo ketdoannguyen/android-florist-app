@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".view.home.fragment.BlogFragment"
+        android:background="@color/color_bgblog"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:background="@color/c3"
+            android:paddingStart="10dp">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/icon_blog" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="90dp"
+                android:layout_marginTop="30dp"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp"
+                android:text="BLOG FLOWER NEWS"
+                android:textColor="@color/text"
+                android:textSize="25sp"
+                android:transitionName="logo_txt" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="283dp"
+            android:layout_height="42dp"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:layout_marginTop="5dp"
+            android:fontFamily="monospace"
+            android:text="New Blog"
+            android:textColor="@color/text"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal">
+
+            <View
+                android:layout_width="60dp"
+                android:layout_height="4dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="20dp"
+                android:background="@color/color_yellow" />
+        </TableRow>
+
+
+        <!--    <ListView-->
+        <!--        android:id="@+id/lv_RSS"-->
+        <!--        android:layout_width="403dp"-->
+        <!--        android:layout_height="594dp"-->
+        <!--        android:layout_alignParentBottom="true"-->
+
+        <!--        app:layout_constraintBottom_toBottomOf="parent"-->
+        <!--        app:layout_constraintEnd_toEndOf="parent"-->
+        <!--        app:layout_constraintStart_toStartOf="parent"-->
+        <!--        app:layout_constraintTop_toBottomOf="@+id/linearLayout">-->
+
+        <!--    </ListView>-->
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/listBlog"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="5dp"
+                android:paddingBottom="50dp"
+                app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+                tools:itemCount="1"
+                tools:listitem="@layout/z_list_blog_item" />
+        </ScrollView>
+
+    </LinearLayout>
+</layout>

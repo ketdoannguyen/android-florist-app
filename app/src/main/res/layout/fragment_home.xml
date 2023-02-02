@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <RelativeLayout
+        android:background="@color/bgr_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".view.home.fragment.HomeFragment">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:orientation="horizontal"
+                android:paddingTop="10dp"
+                android:paddingBottom="5dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <Button
+                    android:id="@+id/txtSearch"
+                    android:layout_width="280dp"
+                    android:layout_height="50dp"
+                    android:autofillHints="name"
+                    android:background="@drawable/shape_search"
+                    android:drawableStart="@drawable/search"
+                    android:drawablePadding="-20dp"
+                    android:hint="Enter key flowers..."
+                    android:letterSpacing="0.08"
+                    android:paddingStart="20dp"
+                    android:paddingEnd="10dp"
+                    android:textSize="16dp" />
+
+                <ImageView
+                    android:id="@+id/img_cart"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="5dp"
+                    android:contentDescription="@string/todo"
+                    android:padding="6dp"
+                    android:src="@drawable/img_cart" />
+
+                <ImageView
+                    android:id="@+id/img_message"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="5dp"
+                    android:contentDescription="@string/todo"
+                    android:padding="6dp"
+                    android:src="@drawable/message" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/lyTop">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:scrollbars="none"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginEnd="10dp"
+                            android:orientation="vertical">
+
+                            <androidx.constraintlayout.widget.ConstraintLayout
+                                android:id="@+id/constraintLayout"
+                                android:layout_width="match_parent"
+                                android:layout_height="120dp"
+                                android:layout_margin="5dp"
+                                android:background="@drawable/shape_note"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toBottomOf="@+id/txtSearch">
+
+                                <LinearLayout
+                                    android:id="@+id/lyNote"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:gravity="center_vertical"
+                                    android:orientation="vertical"
+                                    android:paddingStart="10dp"
+                                    android:paddingEnd="5dp"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent">
+
+                                    <TextView
+                                        android:id="@+id/txtHeadingTip"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:letterSpacing="0.01"
+                                        android:paddingTop="20dp"
+                                        android:paddingBottom="10dp"
+                                        android:text="@string/today_tips"
+                                        android:textSize="15sp"
+                                        android:textStyle="bold" />
+
+                                    <TextView
+                                        android:id="@+id/txtTitleTip"
+                                        android:layout_width="200dp"
+                                        android:layout_height="wrap_content"
+                                        android:letterSpacing="0.01"
+                                        android:lineSpacingExtra="5dp"
+                                        android:text="@string/tip_note_title"
+                                        android:textSize="14sp" />
+                                </LinearLayout>
+
+                                <ImageView
+                                    android:layout_width="100dp"
+                                    android:layout_height="match_parent"
+                                    android:contentDescription="@string/todo"
+                                    android:padding="10dp"
+                                    android:src="@drawable/rosenote"
+                                    app:layout_constraintStart_toEndOf="@+id/lyNote"
+                                    app:layout_constraintTop_toBottomOf="parent" />
+
+                            </androidx.constraintlayout.widget.ConstraintLayout>
+
+                            <androidx.constraintlayout.widget.ConstraintLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toBottomOf="@+id/constraintLayout">
+
+                                <LinearLayout
+                                    android:id="@+id/layoutHomeCategories"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="5dp"
+                                    android:layout_marginTop="10dp"
+                                    android:orientation="horizontal"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent">
+
+                                    <RelativeLayout
+                                        android:id="@+id/categories_fresh"
+                                        android:layout_width="80dp"
+                                        android:layout_height="90dp"
+                                        android:layout_marginEnd="17dp"
+                                        android:background="@drawable/shape_note"
+                                        android:backgroundTint="@color/light_pink"
+                                        android:padding="5dp">
+
+                                        <ImageView
+                                            android:id="@+id/img_categories1"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="30dp"
+                                            android:layout_marginTop="10dp"
+                                            android:contentDescription="@string/todo"
+                                            android:src="@drawable/flower_item1" />
+
+                                        <TextView
+                                            android:id="@+id/txt_categories1"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_below="@+id/img_categories1"
+                                            android:layout_marginTop="5dp"
+                                            android:gravity="bottom|center_horizontal"
+                                            android:letterSpacing="0.01"
+                                            android:padding="5dp"
+                                            android:text="@string/fresh"
+                                            android:textColor="@color/pinkk"
+                                            android:textSize="11sp"
+                                            android:textStyle="bold" />
+
+                                    </RelativeLayout>
+
+                                    <RelativeLayout
+                                        android:id="@+id/categories_dried"
+                                        android:layout_width="80dp"
+                                        android:layout_height="90dp"
+                                        android:layout_marginEnd="17dp"
+                                        android:background="@drawable/shape_note"
+                                        android:backgroundTint="@color/light_pink"
+                                        android:padding="5dp">
+
+                                        <ImageView
+                                            android:id="@+id/img_categories2"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="30dp"
+                                            android:layout_marginTop="10dp"
+                                            android:contentDescription="@string/todo"
+                                            android:src="@drawable/flower_dried" />
+
+                                        <TextView
+                                            android:id="@+id/txt_categories2"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_below="@+id/img_categories2"
+                                            android:layout_marginTop="5dp"
+                                            android:gravity="bottom|center_horizontal"
+                                            android:letterSpacing="0.01"
+                                            android:padding="5dp"
+                                            android:text="DRIED"
+                                            android:textSize="11sp" />
+
+                                    </RelativeLayout>
+
+                                    <RelativeLayout
+                                        android:id="@+id/categories_artificial"
+                                        android:layout_width="80dp"
+                                        android:layout_height="90dp"
+                                        android:layout_marginEnd="17dp"
+                                        android:background="@drawable/shape_note"
+                                        android:backgroundTint="@color/light_pink"
+                                        android:padding="5dp">
+
+                                        <ImageView
+                                            android:id="@+id/img_categories3"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="30dp"
+                                            android:layout_marginTop="10dp"
+                                            android:contentDescription="@string/todo"
+                                            android:src="@drawable/flower_pot" />
+
+                                        <TextView
+                                            android:id="@+id/txt_categories3"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_below="@+id/img_categories3"
+                                            android:layout_marginTop="5dp"
+                                            android:gravity="bottom|center_horizontal"
+                                            android:letterSpacing="0.01"
+                                            android:padding="5dp"
+                                            android:text="ARTIFICIAL"
+                                            android:textSize="11sp" />
+
+                                    </RelativeLayout>
+
+                                    <RelativeLayout
+                                        android:id="@+id/categories_vases"
+                                        android:layout_width="80dp"
+                                        android:layout_height="90dp"
+                                        android:background="@drawable/shape_note"
+                                        android:backgroundTint="@color/light_pink"
+                                        android:padding="5dp">
+
+                                        <ImageView
+                                            android:id="@+id/img_categories4"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="30dp"
+                                            android:layout_marginTop="10dp"
+                                            android:contentDescription="@string/todo"
+                                            android:src="@drawable/vase" />
+
+                                        <TextView
+                                            android:id="@+id/txt_categories4"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_below="@+id/img_categories4"
+                                            android:layout_marginTop="5dp"
+                                            android:gravity="bottom|center_horizontal"
+                                            android:letterSpacing="0.01"
+                                            android:padding="5dp"
+                                            android:text="VASES"
+                                            android:textSize="11sp" />
+
+                                    </RelativeLayout>
+
+
+                                </LinearLayout>
+
+
+                                <TextView
+                                    android:id="@+id/textView"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="10dp"
+                                    android:gravity="center_vertical"
+                                    android:padding="5dp"
+                                    android:text="@string/discover"
+                                    android:textSize="20sp"
+                                    android:textStyle="bold"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintHorizontal_bias="0.044"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toBottomOf="@+id/layoutHomeCategories" />
+
+                                <androidx.recyclerview.widget.RecyclerView
+                                    android:id="@+id/listProduct"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginStart="8dp"
+                                    android:layout_marginEnd="10dp"
+                                    android:paddingBottom="80dp"
+                                    app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+                                    app:layout_constraintBottom_toBottomOf="parent"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toBottomOf="@+id/textView"
+                                    tools:itemCount="1"
+                                    tools:listitem="@layout/z_list_item_home_view" />
+
+                            </androidx.constraintlayout.widget.ConstraintLayout>
+
+                        </LinearLayout>
+
+
+                    </ScrollView>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+
+    </RelativeLayout>
+</layout>

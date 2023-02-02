@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_verify"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingEnd="20dp"
+        android:paddingTop="20dp"
+        android:paddingStart="20dp"
+        android:paddingBottom="30dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:text="@string/verify_phone"
+            android:textColor="@color/text"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="sans-serif-condensed"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="Enter The Verification Code We Just Send You On Your Phone"
+            android:textColor="@color/txt_unselected"
+            android:textSize="14sp" />
+
+
+        <!--        <EditText-->
+        <!--            android:id="@+id/verifyOTP"-->
+        <!--            android:layout_width="250dp"-->
+        <!--            android:layout_height="50dp"-->
+        <!--            android:layout_marginTop="20dp"-->
+        <!--            android:paddingStart="10dp"-->
+        <!--            android:maxLines="1"-->
+        <!--            android:lines="1"-->
+        <!--            android:textSize="20sp"-->
+        <!--            android:inputType="number"-->
+        <!--            android:maxLength="6"-->
+        <!--            android:gravity="center"-->
+        <!--            android:letterSpacing="0.5"-->
+        <!--            android:background="@drawable/shape_note"-->
+        <!--            android:backgroundTint="@color/c1"/>-->
+        <com.chaos.view.PinView
+            android:id="@+id/id_otp"
+            style="@style/PinWidget.PinView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:cursorVisible="true"
+            android:inputType="number"
+            android:itemBackground="@color/bgr_color"
+            android:textColor="#1F1F1F"
+            app:hideLineWhenFilled="true"
+            app:itemCount="6"
+            app:itemRadius="5dp"
+            app:lineColor="@color/cafe" />
+
+
+        <TextView
+            android:id="@+id/btn_resend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="20dp"
+            android:layout_gravity="end"
+            android:padding="10dp"
+            android:textColor="@color/txtActionBar"
+            android:text="Didn't get OTP? Resend"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/btn_submit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/button"
+            android:padding="10dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:text="Submit"
+            android:textColorLink="#F3C5C5"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+
+</RelativeLayout>
+</layout>

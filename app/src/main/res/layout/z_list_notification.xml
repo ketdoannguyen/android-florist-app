@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <variable
+            name="Notification"
+            type="com.ntmk.myapp.model.Notificationn" />
+    </data>
+
+    <RelativeLayout
+        android:background="@color/bgr_pager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:layout_marginTop="-10dp"
+            android:layout_marginBottom="-10dp">
+
+            <RelativeLayout
+                android:id="@+id/layoutNotification"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="12dp">
+
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cartView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:cardCornerRadius="5dp"
+                    app:cardElevation="10dp"
+                    app:cardUseCompatPadding="true">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="43dp"
+                        android:layout_marginEnd="38dp"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/txt_title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="sans-serif-condensed-medium"
+                            android:paddingTop="2dp"
+                            android:paddingBottom="5dp"
+                            android:text="@={Notification.title}"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:id="@+id/txt_detail"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="sans-serif-condensed"
+                            android:paddingBottom="3dp"
+                            android:text="@={Notification.detail}"
+                            android:textColor="@color/cannon_pink"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/txt_time"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="sans-serif-condensed"
+                            android:text="@={Notification.time}"
+                            android:textColor="@color/cannon_pink"
+                            android:textSize="12sp" />
+
+
+                    </LinearLayout>
+
+
+                </androidx.cardview.widget.CardView>
+
+            </RelativeLayout>
+
+
+            <ImageView
+                android:id="@+id/img_type"
+                android:layout_marginStart="10dp"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/imgquestion" />
+
+            <ImageButton
+                android:id="@+id/btn_status"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="38dp"
+                android:background="@drawable/shape_online" />
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+</layout>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="1dp"
+    android:layout_marginTop="6dp"
+    android:layout_marginBottom="6dp"
+    android:id="@+id/layoutChat"
+    android:orientation="vertical">
+    <TextView
+        android:id="@+id/tvNameSender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/gilroy_light"
+        android:layout_marginStart="60dp"
+        android:layout_marginBottom="3dp"
+        android:textSize="12sp"
+        tools:text="farhan" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/userImageMessage"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="bottom"
+            android:layout_marginStart="10dp"
+            android:src="@drawable/animal5" />
+
+        <TextView
+            android:id="@+id/tvMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxWidth="280dp"
+            android:fontFamily="@font/gilroy_light"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:paddingStart="10dp"
+            android:paddingEnd="8dp"
+            android:layout_marginStart="10dp"
+            android:background="@drawable/item_left_alone_slide"
+            android:textSize="16sp"
+
+            tools:text="farhanfhfhgffhfhjfjfjfjhfjffgfgfffhffffffffffffffffffffffffffffffffffffffddddkkmmmmmmmmmm" />
+
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

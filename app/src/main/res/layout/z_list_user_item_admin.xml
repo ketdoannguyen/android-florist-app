@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <data>
+
+        <variable
+            name="User"
+            type="com.ntmk.myapp.model.User" />
+    </data>
+    <LinearLayout
+        android:id="@+id/layout_user_admin"
+        android:layout_width="170dp"
+        android:layout_height="150dp"
+        android:layout_marginBottom="18dp"
+        android:background="@drawable/shape_item_user_admin"
+        android:orientation="vertical"
+        android:gravity="center|top">
+
+        <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/img"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="8dp"
+            android:padding="5dp"
+            android:imageUrl="@{User.img}"
+            android:src="@drawable/animal5" />
+        <TextView
+            android:id="@+id/txtName"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:layout_above="@+id/txtPrice_list"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="2dp"
+            android:gravity="center"
+            android:fontFamily="monospace"
+            android:text="@={User.userName}"
+            android:textSize="20sp" />
+        <TextView
+            android:id="@+id/txtEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/txtPrice_list"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="2dp"
+            android:gravity="center"
+            android:fontFamily="monospace"
+            android:text="@={User.email}"
+            android:textSize="12sp" />
+
+
+
+
+    </LinearLayout>
+
+</layout>

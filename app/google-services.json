@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "172693806312",
+    "firebase_url": "https://wild-florist-d20-default-rtdb.firebaseio.com",
+    "project_id": "wild-florist-d20",
+    "storage_bucket": "wild-florist-d20.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:172693806312:android:d8f010113e3f7e60267d5d",
+        "android_client_info": {
+          "package_name": "com.ntmk.myapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "172693806312-3d7a1t86f8ga2jkbhmgnt4mjaotra3u1.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.ntmk.myapp",
+            "certificate_hash": "14b69341e55b35f4739d83d2a81231ac1b9a75fc"
+          }
+        },
+        {
+          "client_id": "172693806312-iaa2eqpmu12ng69b0soi1e36anngej6a.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCM7W8uaDelKSuMVV1Ih1E1U3JXaA3h57U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "172693806312-716miql2a8oh2ovtcf479vrficfesmaj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

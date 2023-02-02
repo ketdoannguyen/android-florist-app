@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+        <LinearLayout
+            android:id="@+id/layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/shape_search_dialog"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/layoutSearch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:orientation="horizontal"
+                android:paddingTop="10dp"
+                >
+
+                <EditText
+                    android:id="@+id/txtSearch"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/shape_search"
+                    android:queryBackground="@android:color/transparent"
+                    android:hint="Enter key flowers..."
+                    android:drawableStart="@drawable/search"
+                    android:drawablePadding="20dp"
+                    android:paddingStart="20dp"
+                    android:letterSpacing="0.05"
+                    android:textSize="18dp"
+                    android:paddingEnd="10dp"
+                    android:layout_gravity="center_vertical"
+                    android:autofillHints="name"/>
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/layoutMid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="5dp"
+                android:orientation="horizontal"
+                android:paddingBottom="20dp">
+                <LinearLayout
+                    android:id="@+id/layoutMid1"
+                    android:layout_width="178dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingTop="10dp">
+
+                    <TextView
+                        android:id="@+id/txtSearchRecently"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:letterSpacing="0.02"
+                        android:paddingBottom="10dp"
+                        android:text="Recent Search"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txtSearchRecently1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:letterSpacing="0.02"
+                        android:paddingBottom="10dp"
+                        android:text="TuLip Flower"
+                        android:textSize="18sp" />
+                    <TextView
+                        android:id="@+id/txtSearchRecently2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:letterSpacing="0.02"
+                        android:paddingBottom="10dp"
+                        android:text="Temperature"
+                        android:textSize="18sp" />
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/layoutMid2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:orientation="vertical"
+                    android:paddingTop="10dp">
+
+                    <TextView
+                        android:id="@+id/txtSearchCommon"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:letterSpacing="0.02"
+                        android:paddingBottom="10dp"
+                        android:text="Popular Keywords"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txtSearchCommon1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:letterSpacing="0.02"
+                        android:paddingBottom="10dp"
+                        android:text="Fresh Flower"
+                        android:textSize="18sp" />
+                    <TextView
+                        android:id="@+id/txtSearchCommon2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:letterSpacing="0.02"
+                        android:paddingBottom="10dp"
+                        android:text="Gerbera Flower"
+                        android:textSize="18sp" />
+                    <TextView
+                        android:id="@+id/txtSearchCommon3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:letterSpacing="0.02"
+                        android:paddingBottom="10dp"
+                        android:text="Flower care tips"
+                        android:textSize="18sp" />
+                    <TextView
+                        android:id="@+id/txtSearchCommon4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:letterSpacing="0.02"
+                        android:paddingBottom="10dp"
+                        android:text="How to update profile"
+                        android:textSize="18sp" />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+</layout>

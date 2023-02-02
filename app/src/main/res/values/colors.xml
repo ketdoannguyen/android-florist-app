@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="gray">#534D4D</color>
+    <color name="light_grey">#E8F6F6F6</color>
+
+    <!-- custom colors -->
+
+    <color name="color_text_order_status">#FF66CC</color>
+    <color name="color_text_order">#888888</color>
+    <color name="color_order">#FFF0F5</color>
+    <color name="color_status_order">#FF6600</color>
+    <color name="colorLine">#C0C0C0</color>
+    <color name="color_text_blog">#990000</color>
+    <color name="color_bgblog">#F5F5F5</color>
+    <color name="color_yellow">#FF9900</color>
+    <color name="bgr_pager">#fcfaf2</color>
+    <color name="color_hint">#FDB499</color>
+    <color name="color_note">#FF5E5E</color>
+    <color name="txt_title">#292525</color>
+    <color name="txt_unselected">#9B9B9B</color>
+    <color name="ActionBar">#FFB4A2</color>
+    <color name="txtActionBar">#121010</color>
+    <color name="clr_title">#831818</color>
+    <color name="text">#FF001B01</color>
+
+    <!-- color code -->
+    <color name="colorTextBackground">#f5f5f5</color>
+    <color name="colorText">#464646</color>
+    <color name="colorItemLeft">#E6E4E4</color>
+    <color name="colorItemRight">#813fd7</color>
+    <color name="color_text">#444444</color>
+    <color name="color_bgr_start">#FFEDD9</color>
+    <color name="bgr_color">#F7FEF8F1</color>
+    <color name="transparent">#6FFEF8F1</color>
+    <color name="c1">#ffe5d9</color>
+    <color name="c2">#ffd7ba</color>
+    <color name="c3">#FFCCFF</color>
+    <color name="light_pink">#f8dbd3</color>
+    <color name="pink">#fcc0c5</color>
+    <color name="pink_nude">#e6bec1</color>
+    <color name="pink_old">#ed949b</color>
+    <color name="pink_red">#b87378</color>
+    <color name="cafe">#cba89f</color>
+    <color name="carissma">#e894a7</color>
+    <color name="pinkk">#993399</color>
+    <color name="contessa">#c06378</color>
+    <color name="cannon_pink">#8b4e5e</color>
+    <color name="congo_brown">#663845</color>
+    <color name="cocoa_brown">#321e25</color>
+    <color name="light_blue_600">#FF039BE5</color>
+    <color name="light_blue_900">#FF01579B</color>
+    <color name="light_blue_A200">#FF40C4FF</color>
+    <color name="light_blue_A400">#FF00B0FF</color>
+    <color name="black_overlay">#66000000</color>
+    <color name="color_line">#C0C0C0</color>
+</resources>

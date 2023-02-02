@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/bgr_pager"
+    android:id="@+id/lyGardenViewList">
+
+    <RelativeLayout
+        android:layout_width="180dp"
+        android:layout_height="250dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/shape_list"
+        android:padding="5dp">
+
+
+        <ImageView
+            android:id="@+id/imgGarden_list"
+            android:layout_width="169dp"
+            android:layout_height="258dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="-28dp"
+            android:layout_marginTop="37dp"
+            android:layout_marginEnd="25dp"
+            android:layout_marginBottom="-50dp"
+            android:background="@drawable/shape_imges"
+            android:contentDescription="@string/todo"
+            android:src="@drawable/list_flower" />
+
+        <TextView
+            android:id="@+id/txtGarden_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:text="@string/flower_pot"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/link_garden_weight"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="2dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/shape_circle"
+            android:contentDescription="@string/todo"
+            android:drawableTop="@drawable/water"
+            android:drawablePadding="-10dp"
+            android:gravity="center"
+            android:padding="8dp"
+            android:text="20%" />
+
+        <TextView
+            android:id="@+id/link_garden_sun"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_above="@+id/link_garden_weight"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="2dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/shape_circle"
+            android:contentDescription="@string/todo"
+            android:drawableTop="@drawable/sun"
+            android:drawablePadding="-10dp"
+            android:gravity="center"
+            android:padding="8dp"
+            android:text="100%" />
+
+        <TextView
+            android:id="@+id/link_gardenTemp"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_above="@+id/link_garden_sun"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="2dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/shape_circle"
+            android:contentDescription="@string/todo"
+            android:drawableTop="@drawable/thermometer"
+            android:drawablePadding="-10dp"
+            android:gravity="center"
+            android:padding="8dp"
+            android:text="8°C" />
+
+    </RelativeLayout>
+
+</RelativeLayout>
+</layout>

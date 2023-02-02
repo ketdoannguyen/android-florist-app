@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.ntmk.myapp.view.home.fragment.HomeFragment"
+        tools:layout="@layout/fragment_home" >
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_garden"
+        android:name="com.ntmk.myapp.view.home.fragment.GardenFragment"
+        tools:layout="@layout/fragment_garden" >
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_blog"
+        android:name="com.ntmk.myapp.view.home.fragment.BlogFragment"
+        tools:layout="@layout/fragment_blog" >
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_notification"
+        android:name="com.ntmk.myapp.view.home.fragment.NotificationsFragment"
+        tools:layout="@layout/fragment_notifications" >
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_profile"
+        android:name="com.ntmk.myapp.view.home.fragment.ProfileFragment"
+        tools:layout="@layout/fragment_profile" >
+        <action
+            android:id="@+id/action_navigation_profile_to_navigation_balance"
+            app:destination="@id/navigation_balance" />
+        <action
+            android:id="@+id/action_navigation_profile_to_settingFragment"
+            app:destination="@id/settingFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_balance"
+        android:name="com.ntmk.myapp.view.home.fragment.BalanceFragment"
+        tools:layout="@layout/fragment_balance" >
+        <action
+            android:id="@+id/action_navigation_balance_to_navigation_profile"
+            app:destination="@id/navigation_profile" />
+    </fragment>
+    <fragment
+        android:id="@+id/settingFragment"
+        android:name="com.ntmk.myapp.view.home.fragment.SettingFragment"
+        android:label="SettingFragment" >
+        <action
+            android:id="@+id/action_settingFragment_to_navigation_profile"
+            app:destination="@id/navigation_profile" />
+    </fragment>
+</navigation>

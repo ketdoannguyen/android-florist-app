@@ -1,0 +1,64 @@
+<resources>
+    <string name="app_name">MyApp</string>
+    <string name="todo">TODO</string>
+    <string name="welcome">WELCOME</string>
+    <string name="pass">Pass</string>
+    <string name="login">Login</string>
+    <string name="forgot_password">Forgot Password</string>
+    <string name="user">User</string>
+    <string name="create_new_account">Create new account ?</string>
+    <string name="or">OR</string>
+    <string name="email">Email</string>
+    <string name="conform_pass">Confirm pass</string>
+    <string name="remember_account">Remember account</string>
+    <string name="sign_up">Sign up</string>
+    <string name="already_gave_account">Already gave account ? Login Now</string>
+    <string name="register">Register</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="flower">FLOWER</string>
+    <string name="Lorem">Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</string>
+    <string name="page_num">-</string>
+    <string name="skip">SKIP</string>
+    <string name="next">NEXT</string>
+    <string name="tab_text_1">Tab 1</string>
+    <string name="tab_text_2">Tab 2</string>
+    <string name="title_activity_home">HomeActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_garden">My Garden</string>
+    <string name="title_notification">Notification</string>
+    <string name="title_live">Live</string>
+    <string name="wild_florist">Wild Florist</string>
+    <string name="title_profile">Profile</string>
+    <string name="search_here">Search here ...</string>
+    <string name="today_tips">Today tips</string>
+    <string name="tip_note_title">Give enough water to maximize flowers growth</string>
+    <string name="discover">Discover</string>
+    <string name="fresh">FRESH</string>
+    <string name="name_flower">Name flower</string>
+    <string name="_10">$10</string>
+    <string name="flower_pot">Flower Pot</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="facebook_app_id">1234</string>
+    <string name="fb_login_protocol_scheme">fb1234</string>
+    <string name="facebook_client_token">56789</string>
+    <string name="txt_create_pass">Please enter your email to receive an OTP to create a new password</string>
+    <string name="reset_password">Reset Password</string>
+    <string name="confirm">Confirm</string>
+    <string name="back">Back</string>
+    <string name="verify_phone">Verify Phone</string>
+    <string name="title_activity_admin">AdminActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+
+    <string name="navigation_view_open">Open Navigation</string>
+    <string name="navigation_view_close">Close Navigation</string>
+
+</resources>
